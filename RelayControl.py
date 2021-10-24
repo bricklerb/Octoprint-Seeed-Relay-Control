@@ -1,4 +1,4 @@
-from Lib import relay_lib_seeed
+from relay_lib_seeed import *
 
 class RelayControl:
     def ChangeRelayState(relay_num, state):
