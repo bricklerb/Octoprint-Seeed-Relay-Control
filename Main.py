@@ -1,6 +1,6 @@
 import argparse
 
-from RelayControl import RelayControl
+from RelayControl import*
 
 parser = argparse.ArgumentParser(description='Relay Control Script')
 parser.add_argument('-o', '--off', help='Parameter to turn off the relay', action='store_false')
@@ -16,6 +16,6 @@ if (relay < 1 or relay > 4):
     exit
 
 if (setting):
-    RelayControl.ChangeRelayState(relay, True)
+    ChangeRelayState(relay, True)
 else:
-    RelayControl.ChangeRelayState(relay, False)
+    ChangeRelayState(relay, False)
